@@ -7,7 +7,26 @@ import  {Cards} from'./components/Cards/Cards.jsx'
 function App() {
   return (
     <div className="App">
-      <Cards/> 
+      <section className="allCard">
+      <Cards/>
+      <Cards/>
+      <Cards/>
+      <Cards/>
+      <Cards/>
+      <Cards/>
+      <Cards/>
+      <Cards/>
+      <Cards/>
+      <Cards/>
+      <Cards/>
+      <Cards/>
+      <Cards/>
+      <Cards/>
+      <Cards/>
+      <Cards/>
+      <Cards/>
+      </section> 
+     
      {/* <Select/> */}
     </div>
   );

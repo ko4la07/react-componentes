@@ -1,52 +1,49 @@
-// * {
-//   padding: 0;
-//   margin: 0;
-//   box-sizing: border-box;
-// }
+$primary-color: khaki !important;
+$unit: 10px;
 
-.CardLayout{
-  display: inline-flex;
-  // .cardMedia{
-
-  // }
-  
+@function size($value) {
+  @return $value * $unit;
 }
-// .card-Column {
-//   display: inline-flex;
-// }
 
-// .card-Body {
-//   display: inline-block;
-// }
-// .container-Card {
-//   border-style: groove;
-//   border-radius: 5px;
-//   height: 150px;
-//   margin-top: 30px;
-//   margin-left: 20px;
-//   width: 200px;
+@mixin cardButton($background-color, $color, $border) {
+  background-color: $background-color;
+  color: $color;
+}
 
-//   .card-Title {
-//     border: groove;
-//     width: 100px;
-//     height: 15px;
-//     display: inline-flex;
-//   }
-//   .card-Img {
-//     border: groove;
-//     margin: 10px;
-//   }
-//   .card-Text {
-//     margin: 10px;
-//     border: groove;
-//     height: 30px;
-//     width: 150px;
-//     display: inline-block;
-//   }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-//   .btn-Card {
-//     padding: revert;
-//   }
-// }
+.card{
+  display: inline-table;
+  .cardLayout {
+    border: indigo;
+    height: 250px;
+    width: 250px;
+    margin-top: 30px;
+    margin-left: 20px;
+    display: inline-table;
+    background-color: $primary-color;
+  }
+  .cardImg {
+    max-inline-size: -webkit-fill-available;
+  }
+  .cardTitleContent {
+    padding: 0px !important;
+    margin: 10px !important;
+  }
+  .cardTitle {
+    justify-content: center;
+  }
+}
 
-// /*no va colores, ni tipo de fuente*/
+.cardButton {
+  margin: 10px !important;
+  width: 100px;
+
+  display: contents;
+}
+
+// /*no va colores, ni tipo de fuente*//

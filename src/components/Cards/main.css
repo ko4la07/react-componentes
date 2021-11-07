@@ -1,5 +1,36 @@
-.CardLayout {
-  display: inline-flex;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  display: inline-table;
+}
+.card .cardLayout {
+  border: indigo;
+  height: 250px;
+  width: 250px;
+  margin-top: 30px;
+  margin-left: 20px;
+  display: inline-table;
+  background-color: khaki !important;
+}
+.card .cardImg {
+  max-inline-size: -webkit-fill-available;
+}
+.card .cardTitleContent {
+  padding: 0px !important;
+  margin: 10px !important;
+}
+.card .cardTitle {
+  justify-content: center;
+}
+
+.cardButton {
+  margin: 10px !important;
+  width: 100px;
+  display: contents;
 }
 
 /*# sourceMappingURL=main.css.map */
