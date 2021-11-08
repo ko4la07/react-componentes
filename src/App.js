@@ -1,26 +1,26 @@
-import logo from './logo.svg';
+
+import './App.css'; 
+import Tabs from '../src/components/TABS/Tabs'
+
 import './App.css';
-import Search from './components/Search/Search.js';
+import Alerts from './components/Alerts/Alerts';
+import Login from './components/Login';
+import Box from '@mui/material/Box';
+
 
 function App() {
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-    <Search />
+    <div className="App">
+      <Login />
+      <Alerts/>
+
+      <Box sx={{ width: '100%',display: 'flex',mx: 10 ,my:10 }}>
+      <Tabs />
+      </Box>
+
+      
+
+    </div>
   );
 }
 

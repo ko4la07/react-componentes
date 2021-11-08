@@ -1,0 +1,49 @@
+$primary-color: khaki !important;
+$unit: 10px;
+
+@function size($value) {
+  @return $value * $unit;
+}
+
+@mixin cardButton($background-color, $color, $border) {
+  background-color: $background-color;
+  color: $color;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card{
+  display: inline-table;
+  .cardLayout {
+    border: indigo;
+    height: 250px;
+    width: 250px;
+    margin-top: 30px;
+    margin-left: 20px;
+    display: inline-table;
+    background-color: $primary-color;
+  }
+  .cardImg {
+    max-inline-size: -webkit-fill-available;
+  }
+  .cardTitleContent {
+    padding: 0px !important;
+    margin: 10px !important;
+  }
+  .cardTitle {
+    justify-content: center;
+  }
+}
+
+.cardButton {
+  margin: 10px !important;
+  width: 100px;
+
+  display: contents;
+}
+
+// /*no va colores, ni tipo de fuente*//
