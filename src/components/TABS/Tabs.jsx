@@ -15,7 +15,7 @@ export default function Tabs() {
   };
 
   return (
-    <Box sx={{ width: '100%', typography: 'body1' }}>
+    <Box sx={{ width: '100%', typography: 'body1',px:8 , mx:8 }}>
 
       <TabContext value={value}>
 

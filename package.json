@@ -10,6 +10,7 @@
     "@mui/material": "^5.0.6",
     "@mui/styled-engine-sc": "^5.0.4",
     "@mui/styles": "^5.0.2",
+    "@mui/system": "^5.0.6",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
