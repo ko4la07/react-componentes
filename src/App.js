@@ -1,6 +1,6 @@
 
 import './App.css'; 
-import BasicTabs from '../src/components/TABS/Tabs'
+import Tabs from '../src/components/TABS/Tabs'
 
 import './App.css';
 import Alerts from './components/Alerts/Alerts';
@@ -11,8 +11,9 @@ function App() {
     <div className="App">
       <Login />
       <Alerts/>
+
       
-      <BasicTabs/>
+      <Tabs/>
 
     </div>
   );
