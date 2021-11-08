@@ -1,6 +1,6 @@
 import React from 'react';
 import {Card, CardContent, CardMedia, Button, Typography} from "@mui/material";
-// import './main.css'
+import './cards.scss'
 
 export const Cards = () => {
   

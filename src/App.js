@@ -17,7 +17,6 @@ function App() {
       </Box>
       <Search/>
       <Cards/>
-      
       <Box>
       <Register/>
       </Box>
