@@ -1,0 +1,54 @@
+$unit: 10px;
+$second-unit: 2px;
+
+@function padding($value) {
+    @return $value + $unit;
+}
+
+@function size($value) {
+    @return $value + $unit;
+}
+
+@function spancing($value) {
+    @return $value * $second-unit
+}
+
+.registerContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleRegister {
+    padding-bottom: padding(7);
+}
+
+.formContainer {
+    width: 50%;
+}
+
+.inputName,
+.inputEmail,
+.inputPassword,
+.inputPasswordConfirm {
+    width: 100%;
+    margin-bottom: 1rem !important;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: spancing(4);
+}
+
+.linkLogin {
+    font-size: size(7);
+    padding-top: spancing(8);
+}
+
+.link {
+    text-decoration: none !important;
+    font-weight: 700;
+}
