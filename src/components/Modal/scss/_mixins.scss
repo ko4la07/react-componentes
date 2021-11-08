@@ -1,0 +1,40 @@
+@mixin breakpoint($point) {
+  @if $point == desktop {
+      @media (min-width: 82.5em) { @content ; }
+  }
+  @else if $point == laptop {
+      @media (min-width: 64em) { @content ; }
+  }
+  @else if $point == tablet {
+      @media (min-width: 50em) { @content ; }
+  }
+  @else if $point == phablet {
+      @media (min-width: 37.5em)  { @content ; }
+  }
+  @else if $point == mobileonly {
+      @media (max-width: 37.5em)  { @content ; }
+  }
+  @else {
+    @media (min-width: $point)  { @content ; }
+  } 
+}
+
+
+@mixin fonts-style($color, $font-family, $font-size, $font-weight, $line-height, $letter-spacing){
+  color: $color;
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin roboto-regular($color, $size){
+  @include fonts-style($color, 'Roboto', $size, 400, normal, normal);
+}
+@mixin roboto-medium($color, $size){
+  @include fonts-style($color, 'Roboto', $size, 500, normal, normal);
+}
+@mixin roboto-bold($color, $size){
+  @include fonts-style($color, 'Roboto', $size, 700, normal, normal);
+}

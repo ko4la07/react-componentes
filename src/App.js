@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import Search from './components/Search/Search';
 import { Cards } from './components/Card/Cards';
 import Register from './components/Register/Register';
+import UsingModal from './components/Modal/UsingModal';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Box>
       <Register/>
       </Box>
+      <UsingModal/>
     </div>
   );
 }

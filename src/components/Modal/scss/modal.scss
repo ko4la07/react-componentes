@@ -1,0 +1,59 @@
+@import 'variables';
+@import 'mixins';
+
+/* MODAL */
+.modal {
+  position: fixed;
+  z-index: 100;
+  top:0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: map-get($color,white);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal.is-open {
+  display: flex;
+}
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 20px;
+  background-color: map-get($color,darkBlue);
+  font-weight: 100;
+  font-size: 16px;
+  border-radius: 15px;
+  flex-wrap: wrap;
+  line-height: 37px;
+  width: 350px;
+  @include breakpoint(700px) {
+    width: 500px;
+    height: 320px;
+  }
+}
+.modal-close {
+  position: absolute;
+  // top: 1rem;
+  right: 1rem;
+  // left: 1rem;
+  border: none;
+  background-color: transparent;
+  color: white;
+  height: 20px;
+  width: 20px;
+}
+.modal-close path {
+  color: map-get($color,white);
+}
+.modal-close svg {
+  height: 18px;
+  width: 18px;
+  @include breakpoint(700px) {
+    height: 35px;
+    width: 35px;
+  }
+}
