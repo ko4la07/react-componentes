@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Grid, Box, TextField, InputAdornment } from '@mui/material';
+import { Box, TextField } from '@mui/material';
 import SearchSharpIcon from '@mui/icons-material/SearchSharp';
 
 const Search = () => {

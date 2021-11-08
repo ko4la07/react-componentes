@@ -1,6 +1,6 @@
 import React from "react";
 import {TextField, Button, Typography, Link} from '@mui/material';
-import '../Register/register.css';
+// import '../Register/register.css';
 
 const Register = () => {
     return(
