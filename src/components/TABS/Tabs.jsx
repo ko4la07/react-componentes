@@ -7,7 +7,6 @@ import TabPanel from '@mui/lab/TabPanel';
 
 
 
-
 export default function Tabs() {
   const [value, setValue] = useState('1');
 
